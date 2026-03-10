@@ -1,0 +1,125 @@
+/* ===== Projects Section ===== */
+
+#projects{
+  padding:80px 10%;
+  text-align:center;
+
+  /* Background same style as skills section
+  background: linear-gradient(135deg,#0b001a,#1a0033,#2a004d);
+  color:white; */
+}
+
+/* Title */
+
+.projectTitle{
+  font-size:2.5rem;
+  margin-bottom:40px;
+  color:#d8b4fe;
+}
+
+/* Grid Layout */
+
+.projectContainer{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Project Card */
+
+.projectCard{
+  background:rgba(20,20,40,0.6);
+  border-radius: 20px;
+  padding: 18px;
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  transition: 0.4s;
+  position:relative;
+  
+}
+
+/* Glow border */
+
+.projectCard::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#9333ea,#a855f7,#c084fc);
+  opacity:0;
+  transition:0.4s;
+  z-index:-1;
+}
+
+/* Hover effect */
+
+.projectCard:hover{
+  transform:translateY(-6px) scale(1.02);
+  box-shadow:
+  0 6px 20px rgba(168,85,247,0.35),
+  0 0 15px rgba(192,132,252,0.35);
+}
+/* .projectCard:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:
+  0 10px 40px rgba(168,85,247,0.6),
+  0 0 30px rgba(192,132,252,0.6);
+} */
+
+/* Glow on hover */
+
+.projectCard:hover::before{
+  opacity:1;
+  filter:blur(20px);
+}
+
+/* Project Image */
+
+.projectCard img{
+  width:100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+/* Project Title */
+
+.projectCard h3{
+    font-size: 18px;
+  color: #f9a8d4;
+  margin-bottom:6px;
+}
+
+/* Description */
+
+.projectCard p{
+  font-size:13px;
+  color:#ddd;
+  line-height:1.5;
+  margin-bottom: 6px;
+}
+
+/* Tech stack */
+
+.projectTech{
+  font-size:13px;
+  color:#c084fc;
+  margin-bottom:15px;
+}
+
+.projectBtns button{
+margin:5px;
+padding:8px 16px;
+border:none;
+border-radius:20px;
+background:#ff4ecb;
+color:white;
+cursor:pointer;
+}
+
+.projectBtns button:hover{
+background: #a855f7;
+}

@@ -1,0 +1,167 @@
+
+/* ===== MySkills Section ===== */
+
+#myskills{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.skillsTitle{
+  font-size:2.5rem;
+  margin-bottom:50px;
+  color:#d8b4fe;
+}
+
+/* grid layout */
+
+.skillsContainer{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:35px;
+}
+
+/* ===== 3D Glow Card ===== */
+
+.skillCard{
+  background:rgba(20,20,40,0.6);
+  border-radius:20px;
+  padding:30px;
+  cursor:pointer;
+  transition:all 0.4s ease;
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  position:relative;
+  transform-style:preserve-3d;
+}
+
+/* glow border */
+
+.skillCard::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#9333ea,#a855f7,#c084fc);
+  opacity:0;
+  transition:0.4s;
+  z-index:-1;
+}
+
+/* hover 3D effect */
+
+.skillCard:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:
+  0 10px 40px rgba(168,85,247,0.6),
+  0 0 30px rgba(192,132,252,0.6);
+}
+
+/* glow on hover */
+
+.skillCard:hover::before{
+  opacity:1;
+  filter:blur(20px);
+}
+
+.skillCard h3{
+  color:#f9a8d4;
+  margin-bottom:15px;
+}
+
+
+.skillList{
+    list-style:none;   /* removes bullet points */
+padding-left:0;
+margin-top:10px;
+animation:fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+/* .skillList{
+  list-style:none;
+  margin-top:10px;
+} */
+
+.skillList li{
+  display:flex;
+align-items:center;
+gap:8px;
+padding:6px 0;
+font-size:15px;
+color:white;
+}
+
+/* icons */
+
+.icon{
+margin-right:10px;
+font-size:18px;
+color:#c084fc;
+}
+
+
+
+
+
+
+
+
+/* #myskills{
+    padding:80px 10%;
+    text-align: center;
+}
+
+.skillsTitle{
+    text-align:center;
+    font-size:2.5rem;
+    color:#d8b4fe;
+    margin-bottom:50px;
+}
+
+.skillsContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.skillCard{
+    background:rgba(30,27,75,0.6);
+    border-radius:18px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.skillCard:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(168,85,247,0.4);
+}
+
+.skillCard h3{
+    color:#f9a8d4;
+    margin-bottom:20px;
+    font-size:1.3rem;
+}
+
+.skillItem{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    font-size:1rem;
+}
+
+.skillItem svg{
+    font-size:1.4rem;
+    color:#a78bfa;
+} */

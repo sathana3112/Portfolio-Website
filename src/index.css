@@ -1,0 +1,212 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ROOT HEIGHT ===== */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* ===== BASE BODY STYLE ===== */
+body {
+  min-height: 100vh;
+  background-color: #060018;
+  color: #f5e9ff;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  position: relative;
+}
+
+/* ===== STAR BACKGROUND (MOVING) ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(1.2px 1.2px at 10% 20%, #e9d5ff, transparent),
+    radial-gradient(1px 1px at 80% 30%, #c7b9ff, transparent),
+    radial-gradient(1.4px 1.4px at 60% 70%, #93c5fd, transparent),
+    radial-gradient(1px 1px at 30% 80%, #d8b4fe, transparent),
+    radial-gradient(1.3px 1.3px at 90% 90%, #a5b4fc, transparent),
+    radial-gradient(1px 1px at 50% 50%, #f5e9ff, transparent);
+  background-size: 180px 180px;
+  animation: starsMove 90s linear infinite;
+  z-index: -3;
+}
+
+/* ===== FLOATING BUBBLES + GLOW ===== */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 40%, rgba(168, 85, 247, 0.35), transparent 45%),
+    radial-gradient(circle at 75% 60%, rgba(59, 130, 246, 0.35), transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(216, 180, 254, 0.25), transparent 45%);
+  filter: blur(100px);
+  animation: floatBubbles 14s ease-in-out infinite alternate;
+  z-index: -2;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes starsMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1400px 1400px;
+  }
+}
+
+@keyframes floatBubbles {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Global Reset ===== */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
+/* ===== Root Height ===== */
+/* html,
+body,
+#root {
+  height: 100%;
+}
+
+/* ===== Purple Theme Background ===== */
+/* body {
+  min-height: 100vh;
+  background-color: #140021;
+
+  /* cute purple dot pattern
+  background-image:
+    radial-gradient(circle, rgba(216, 180, 254, 0.35) 2px, transparent 2px),
+    radial-gradient(circle, rgba(192, 132, 252, 0.25) 2px, transparent 2px);
+
+  background-size: 60px 60px, 90px 90px;
+  background-position: 0 0, 30px 30px;
+
+  animation: moveDots 22s linear infinite;
+
+  color: #f5e9ff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ===== Floating Purple Bubbles ===== */
+/* body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 0.28;
+  z-index: -1;
+  animation: floatPurple 9s ease-in-out infinite alternate;
+}
+
+body::before {
+  background: #d8b4fe; /* light lavender */
+  /* top: 18%;
+  left: 12%;
+}
+
+body::after {
+  background: #a855f7; /* rich purple */
+  /* bottom: 15%;
+  right: 15%;
+  animation-delay: 2.5s;
+}
+
+/* ===== Animations ===== */
+@keyframes moveDots {
+  from {
+    background-position: 0 0, 30px 30px;
+  }
+  to {
+    background-position: 140px 140px, 170px 170px;
+  }
+}
+
+@keyframes floatPurple {
+  from {
+    transform: translateY(0px) translateX(0px);
+  }
+  to {
+    transform: translateY(-35px) translateX(20px);
+  }
+}
+   
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+
+}
+
+html,body, #root {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+  background-color: #0f1025;
+  background-image:
+    radial-gradient(circle, rgba(168, 85, 247, 0.25) 2px, transparent 2px),
+    radial-gradient(circle, rgba(96, 165, 250, 0.25) 2px, transparent 2px);
+  background-size: 60px 60px, 90px 90px;
+  background-position: 0 0, 30px 30px;
+  animation: moveDots 20s linear infinite;
+  color: white;
+  overflow-x: hidden;
+    /* background: rgb(30, 30, 30);
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll; */
+  

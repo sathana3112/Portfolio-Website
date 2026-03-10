@@ -1,0 +1,112 @@
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+
+/* gradient text */
+background:linear-gradient(135deg,#a855f7,#ec4899);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+/* glow effect */
+text-shadow:0 0 10px rgba(168,85,247,0.6);
+
+transition:0.3s;
+cursor:pointer;
+}
+
+/* hover glow */
+
+.logo:hover{
+text-shadow:
+0 0 15px rgba(168,85,247,0.9),
+0 0 25px rgba(236,72,153,0.7);
+transform:scale(1.05);
+}
+
+/* .logo 
+{
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+} */
+
+
+
+
+
+.desktopMenuListItem {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+  color: #c084fc;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #c084fc;
+}
+
+.desktopMenuBtn {
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.contactBtn{
+padding:10px 22px;
+border:none;
+border-radius:30px;
+font-size:15px;
+font-weight:500;
+cursor:pointer;
+
+/* gradient color */
+background:linear-gradient(135deg,#a855f7,#ec4899);
+
+/* text color */
+color:white;
+
+/* glow effect */
+box-shadow:0 0 15px rgba(168,85,247,0.6);
+
+/* smooth animation */
+transition:all 0.3s ease;
+}
+
+/* hover effect */
+
+.contactBtn:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 20px rgba(168,85,247,0.8),
+0 0 40px rgba(236,72,153,0.6);
+}
