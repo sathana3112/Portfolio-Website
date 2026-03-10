@@ -1,3 +1,115 @@
+# Personal Portfolio Website
+
+This is my personal portfolio website built using **React.js** to showcase my projects, skills, and contact information. The website highlights my journey as a developer and presents my work in a clean and interactive way.
+
+## Features
+
+- Responsive and modern UI design
+- Home section introducing me
+- About section describing my background
+- Skills section displaying my technical skills
+- Projects section showcasing my work
+- Certificates section
+- Contact section with form and social links
+- Smooth scrolling navigation
+
+## Technologies Used
+
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+- React Scroll
+
+## Project Structure
+
+```
+src
+ ├── components
+ │   ├── Navbar
+ │   ├── Intro
+ │   ├── About
+ │   ├── Skills
+ │   ├── Projects
+ │   ├── Certificates
+ │   └── Contact
+ ├── assets
+ ├── App.js
+ └── index.js
+```
+
+## Installation
+
+1. Clone the repository
+
+```
+git clone https://github.com/your-username/portfolio.git
+```
+
+2. Navigate to the project folder
+
+```
+cd portfolio
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run the project
+
+```
+npm start
+```
+
+The app will run at:
+
+```
+http://localhost:3000
+```
+
+## Deployment
+
+The portfolio can be deployed using platforms such as:
+
+- GitHub Pages
+- Netlify
+- Vercel
+
+## Contact
+
+Email: xyz1234@gmail.com  
+LinkedIn: https://linkedin.com/in/linkedin
+GitHub: https://github.com/github
+
+## Author
+
+**Sathana L**
+
+---
+
+⭐ If you like this project, feel free to give it a star on GitHub!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
